@@ -1,0 +1,151 @@
+.header{
+  height: 55px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top:0px;
+  right:0px;
+  left:0px;
+
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color:rgb(210, 210, 210);
+
+  z-index: 100;
+}
+
+.left_sec{
+  align-items: center;
+  display: flex;
+
+}
+
+.hamburger-menu{
+  height: 23px;
+  margin-left: 24px;
+  margin-right: 25px;
+}
+
+.yt-logo{
+  height: 21px;
+}
+
+
+.middle-sec{
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 480px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar{
+  flex:1;
+  height: 34px;
+  padding-left: 12px;
+  font-size: 16px;
+  border:solid;
+  border-color: rgb(179, 176, 176);
+  border-width: 1px;
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 1px black(0,0,0,0.05);
+  width:0;
+}
+
+.search-bar::placeholder{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  
+}
+
+.search-button{
+ height: 37px;
+ width: 57px;
+ background-color: #f1f1f1;
+ border-width: 1px;
+ border-color: rgb(179, 176, 176);
+ border-width: 1px;
+ border-radius: 2px;
+ border-style: solid;
+ margin-left: -1px;
+ position: relative;
+}
+
+.search-button .tooltip,
+.voice-button .tooltip{
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-left: 8px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip{
+  opacity:1;
+}
+
+.search-button,
+.voice-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.search-icon{
+  height: 25px;
+}
+
+.voice-button{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border:none;
+  margin-left: 7px;
+  background-color: #f8f8f8;
+  position: relative;
+}
+
+.voice-icon{
+  height: 24px;
+}
+
+.right_sec{
+  margin-right: 20px;
+  width:200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+
+.upload-iocn{
+height: 25px;
+}
+.app-iocn{
+  height: 25px;
+}
+.notify-iocn{
+  height: 25px;
+}
+.channel-picture-iocn{
+  height: 32px;
+  border-radius: 16px;
+}
+
